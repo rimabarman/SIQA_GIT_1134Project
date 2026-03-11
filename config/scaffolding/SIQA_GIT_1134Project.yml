@@ -7,3 +7,16 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_git_1134.integrations:SSL_JMS
+  packages:
+  - name: SIQA_GIT_1134Project
+    version: "1.0"
+- serviceName: jms2wayssl_publisher:jms2wayssl_publisher
+  packages:
+  - name: JMS2waySSL
+    version: "1.0"
+- serviceName: pub.jms:send
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.816
