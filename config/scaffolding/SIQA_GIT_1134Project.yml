@@ -7,10 +7,17 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+- name: JMS2waySSL
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_1134.integrations:SSL_JDBC
   packages:
   - name: SIQA_GIT_1134Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
 - serviceName: SSL_JDBC_Test.services:insert_ssl
   packages:
@@ -23,6 +30,8 @@ services:
 - serviceName: project.siqa_git_1134.integrations:SSL_JMS
   packages:
   - name: SIQA_GIT_1134Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
 - serviceName: jms2wayssl_publisher:jms2wayssl_publisher
   packages:
