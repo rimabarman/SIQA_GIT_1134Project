@@ -19,6 +19,11 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: rimabarman
   gitBranch: main
+- name: SSL_JDBC_Test
+  gitServerName: prabhakaribm
+  gitUrl: https://github.com/prabhakaribm
+  gitUsername: prabhakaribm
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_1134.integrations:AlertsCRTandERT
   packages:
@@ -100,6 +105,20 @@ services:
   packages:
   - name: JMS2waySSL
     version: "1.0"
+- serviceName: project.siqa_git_1134.integrations:Test_nonSSL
+  packages:
+  - name: SIQA_GIT_1134Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_git_1134.integrations:testjms
   packages:
   - name: SIQA_GIT_1134Project
