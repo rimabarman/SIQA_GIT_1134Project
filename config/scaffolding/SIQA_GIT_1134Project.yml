@@ -19,12 +19,6 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: rimabarman
   gitBranch: main
-- name: SSL_JDBC_Test
-  version: "1.0"
-  gitServerName: rimaSCName
-  gitUrl: https://github.com/prabhakarsag
-  gitUsername: rimabarman
-  gitBranch: main
 services:
 - serviceName: project.siqa_git_1134.integrations:AlertsCRTandERT
   packages:
