@@ -20,11 +20,30 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: SSL_JDBC_Test
+  version: "1.0"
   gitServerName: rimaSCName
   gitUrl: https://github.com/prabhakarsag
   gitUsername: rimabarman
   gitBranch: main
 services:
+- serviceName: project.siqa_git_1134.integrations:AlertsCRTandERT
+  packages:
+  - name: SIQA_GIT_1134Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.816
 - serviceName: project.siqa_git_1134.integrations:SSL_JDBC
   packages:
   - name: SIQA_GIT_1134Project
